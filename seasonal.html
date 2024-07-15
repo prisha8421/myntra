@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seasonal Color Analysis</title>
+    <link rel="stylesheet" href="seasonal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body class="seasonal-page">
+    <div class="container">
+        <h1>SEASONAL COLOR ANALYSIS</h1>
+        <h2>Find a color palette that enhances your beauty!</h2>
+        <p>
+            Ever wondered what colors make you look your best? This short quiz is inspired by seasonal color analysis, a system that matches your natural coloring (hair, eyes, skin) to a flattering color palette.
+        </p>
+        <p>
+            By answering questions about your undertones, contrast level, and preference for muted or bright colors, you can discover which season you are (Spring, Summer, Autumn, Winter)!
+        </p>
+        <div class="question-container">
+            <img src="orange.jpg" alt="Icon" class="icon">
+            <h3>What if I don't like my seasonal colors?</h3>
+        </div>
+        <p>
+            Don't worry, seasonal colors are a guide, not a rule. If you don't love your palette, there's a whole range of colors within each season, or you can always rock your favorites in accessories. Fashion is about confidence, so wear what makes you feel amazing! This quiz is just a fun way to discover colors that enhance your natural beauty.
+        </p>
+        <button id="start-quiz" class="card-button">START QUIZ</button>
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="quizPopup" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Before you start, make sure you follow these instructions:</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="nomakeup.jpg" alt="No Makeup" class="card-img">
+                    <p>Wear no makeup</p>
+                </div>
+                <div class="card">
+                    <img src="goodlighting.jpg" alt="Good Lighting" class="card-img">
+                    <p>Have good lighting</p>
+                </div>
+            </div>
+            <button id="begin-button" class="begin-button">LET'S BEGIN!</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('start-quiz').addEventListener('click', function() {
+            document.getElementById('quizPopup').style.display = 'block';
+        });
+
+        document.querySelector('.close').addEventListener('click', function() {
+            document.getElementById('quizPopup').style.display = 'none';
+        });
+
+        document.getElementById('begin-button').addEventListener('click', function() {
+            window.location.href = 'seasonalquiz.html';
+        });
+
+        window.addEventListener('click', function(event) {
+            if (event.target === document.getElementById('quizPopup')) {
+                document.getElementById('quizPopup').style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

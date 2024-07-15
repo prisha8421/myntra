@@ -1,0 +1,75 @@
+/* Reset and Base Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #c8f5ce; /* Off-white */
+    color: #424242; /* Charcoal grey */
+}
+
+/* Ethereal Page Specific Styles */
+body.ethereal-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #FFFFFF; /* White */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    color: #336633; /* Sage green */
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    color: #332922; /* Dark brown */
+    margin-bottom: 15px;
+}
+
+.description ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.description li {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.description .explore-button {
+    display: inline-block;
+    background-color: #45865e; /* Dark green */
+    color: #FFFFFF; /* White */
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.description .explore-button:hover {
+    background-color: #8B7C66; /* Darker taupe */
+}
+
+.ethereal-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 20px 0;
+    border: 2px solid #45865e;
+    border-radius: 5px;
+}

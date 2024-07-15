@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeup Archetype Quiz</title>
+    <link rel="stylesheet" href="makeupquiz.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body class="makeup-quiz-page">
+    <div class="container">
+        <h1>Makeup Archetype Quiz</h1>
+        <form id="quiz-form">
+            <!-- Part 1: Your Features -->
+            <div class="quiz-section">
+                <h2>Part 1: Your Features</h2>
+                <div class="question">
+                    <h3>A. Eyes:</h3>
+                    <label><input type="radio" name="eyes" value="1"> Large and round</label><br>
+                    <label><input type="radio" name="eyes" value="2"> Small and almond-shaped</label><br>
+                    <label><input type="radio" name="eyes" value="3"> Hooded or slightly downturned</label>
+                </div>
+                <div class="question">
+                    <h3>B. Face Shape:</h3>
+                    <label><input type="radio" name="face-shape" value="1"> Soft and rounded with full cheeks</label><br>
+                    <label><input type="radio" name="face-shape" value="2"> Angular with a defined jawline</label><br>
+                    <label><input type="radio" name="face-shape" value="3"> Balanced with equal width at forehead, cheekbones, and jaw</label>
+                </div>
+                <div class="question">
+                    <h3>C. Lips:</h3>
+                    <label><input type="radio" name="lips" value="1"> Full and plump</label><br>
+                    <label><input type="radio" name="lips" value="2"> Thin and delicate</label><br>
+                    <label><input type="radio" name="lips" value="3"> Average fullness</label>
+                </div>
+            </div>
+
+            <!-- Part 2: Your Preferences -->
+            <div class="quiz-section">
+                <h2>Part 2: Your Preferences</h2>
+                <div class="question">
+                    <h3>A. Makeup Coverage:</h3>
+                    <label><input type="radio" name="coverage" value="1"> Full-coverage base for a flawless look</label><br>
+                    <label><input type="radio" name="coverage" value="2"> Natural, dewy finish with light coverage</label><br>
+                    <label><input type="radio" name="coverage" value="3"> Comfortable with skin texture, prefer minimal coverage</label>
+                </div>
+                <div class="question">
+                    <h3>B. Eye Makeup:</h3>
+                    <label><input type="radio" name="eye-makeup" value="1"> Love bold eyeshadow looks and dramatic eyeliner</label><br>
+                    <label><input type="radio" name="eye-makeup" value="2"> Prefer softer eye looks with natural shades and subtle definition</label><br>
+                    <label><input type="radio" name="eye-makeup" value="3"> Like to experiment with different eye makeup styles</label>
+                </div>
+                <div class="question">
+                    <h3>C. Lip Products:</h3>
+                    <label><input type="radio" name="lip-products" value="1"> Bold lipsticks and dramatic lip colors are my go-to</label><br>
+                    <label><input type="radio" name="lip-products" value="2"> Prefer sheer glosses or nude lipsticks for a natural look</label><br>
+                    <label><input type="radio" name="lip-products" value="3"> Like a variety of lip colors and finishes</label>
+                </div>
+            </div>
+
+            <!-- Bonus Round -->
+            <div class="quiz-section">
+                <h2>Bonus Round</h2>
+                <h3>What is your favorite makeup feature to highlight?</h3>
+                <label><input type="radio" name="highlight-feature" value="Glam"> Eyes (Glam, Smoky)</label><br>
+                <label><input type="radio" name="highlight-feature" value="Natural"> Skin (Natural, Ethereal)</label><br>
+                <label><input type="radio" name="highlight-feature" value="Ingenue"> Lips (Ingenue, some Glam)</label><br>
+                <label><input type="radio" name="highlight-feature" value="Versatile"> No preference (Versatile)</label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" id="submit-button" class="quiz-button">Discover Your Archetype</button>
+        </form>
+    </div>
+
+    <script src="makeupquiz.js"></script>
+</body>
+</html>

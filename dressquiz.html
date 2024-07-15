@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Type Quiz</title>
+    <link rel="stylesheet" href="dressquiz.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Body Type Quiz</h1>
+        </header>
+
+        <main>
+            <div id="quiz-container">
+                <form id="quiz-form">
+                    <fieldset>
+                        <legend id="question-text">Question 1: Shoulders vs. Hips</legend>
+                        <div class="options">
+                            <label>
+                                <input type="radio" name="question1" value="A">
+                                <span>A. My shoulders are wider than my hips.</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="question1" value="B">
+                                <span>B. My hips are wider than my shoulders.</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="question1" value="C">
+                                <span>C. My shoulders and hips are about the same width.</span>
+                            </label>
+                        </div>
+                        <button type="button" id="next-btn">Next</button>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2024 Your Fashion Website. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="dressquiz.js"></script>
+</body>
+</html>

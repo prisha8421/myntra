@@ -1,0 +1,74 @@
+/* Reset and Base Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F2E8D8; /* Light Beige */
+    color: #424242; /* Charcoal Grey */
+}
+
+/* Ingenue Page Specific Styles */
+body.ingenue-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #FFFFFF; /* Off-white */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    color: #A08B7C; /* Brownish-Blonde */
+}
+
+.description h2 {
+    font-family: 'Merriweather', serif;
+    color: #334756; /* Dark Blue */
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.explore-button {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F7CAC9; /* Peachish Pink */
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.explore-button:hover {
+    background-color: #C2E0D0; /* Light Blue */
+    color: #424242; /* Charcoal Grey */
+}
+
+.ingenue-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 20px 0;
+    border: 2px solid #D3A299;
+    border-radius: 5px;
+}

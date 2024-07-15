@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seasonal Color Analysis Quiz</title>
+    <link rel="stylesheet" href="seasonalquiz.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Seasonal Color Analysis Quiz</h1>
+        
+        <!-- Question 1 -->
+        <div class="question" id="question1">
+            <h2>Question 1: What is your undertone?</h2>
+            <!-- Find Undertone Button -->
+            <button id="findUndertone" class="card-button">Find my undertone</button>
+            <form id="question1Form">
+                <div class="options">
+                    <input type="radio" id="warm" name="undertone" value="warm">
+                    <label for="warm">Warm</label><br>
+                </div>
+                <div class="options">
+                    <input type="radio" id="neutral" name="undertone" value="neutral">
+                    <label for="neutral">Neutral</label><br>
+                </div>
+                <div class="options">
+                    <input type="radio" id="cool" name="undertone" value="cool">
+                    <label for="cool">Cool</label><br>
+                </div>
+                <input type="button" value="Next" onclick="showQuestion2()" class="card-button">
+            </form>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question" id="question2" style="display: none;">
+            <h2>Question 2: What is your eye tone?</h2>
+            <!-- Know Your Eye Tone Button -->
+            <button id="knowEyeTone" class="card-button">Know your eye tone</button>
+            <form id="question2Form">
+                <div class="options">
+                    <input type="radio" id="coolEye" name="eyeTone" value="cool">
+                    <label for="coolEye">Cool</label><br>
+                </div>
+                <div class="options">
+                    <input type="radio" id="warmEye" name="eyeTone" value="warm">
+                    <label for="warmEye">Warm</label><br>
+                </div>
+                <input type="button" value="Next" onclick="showQuestion3()" class="card-button">
+            </form>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question" id="question3" style="display: none;">
+            <h2>Question 3: What is your hair undertone?</h2>
+            <!-- Refer Hair Tones Button -->
+            <button id="referHairTones" class="card-button">Refer hair tones</button>
+            <form id="question3Form">
+                <div class="options">
+                    <input type="radio" id="coolHair" name="hairUndertone" value="cool">
+                    <label for="coolHair">Cool</label><br>
+                </div>
+                <div class="options">
+                    <input type="radio" id="warmHair" name="hairUndertone" value="warm">
+                    <label for="warmHair">Warm</label><br>
+                </div>
+                <input type="button" value="Next" onclick="showQuestion4()" class="card-button">
+            </form>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question" id="question4" style="display: none;">
+            <h2>Question 4: What vibe do you give off more?</h2>
+            <!-- Know Your Vibe Button -->
+            <button id="knowVibe" class="card-button">Know your vibe</button>
+            <form id="question4Form">
+                <div class="options">
+                    <input type="radio" id="blackCat" name="vibe" value="blackCat">
+                    <label for="blackCat">Black cat</label><br>
+                </div>
+                <div class="options">
+                    <input type="radio" id="goldenRetriever" name="vibe" value="goldenRetriever">
+                    <label for="goldenRetriever">Golden retriever</label><br>
+                </div>
+                <input type="button" value="Next" onclick="showQuestion5()" class="card-button">
+            </form>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question" id="question5" style="display: none;">
+            <h2>Is your skin pale or dark?</h2>
+            <form id="question5Form">
+                <div class="options">
+                    <input type="radio" id="paleSkin" name="skin" value="pale">
+                    <label for="paleSkin">Pale</label><br>
+                </div>
+                <div class="options">
+                    <input type="radio" id="darkSkin" name="skin" value="dark">
+                    <label for="darkSkin">Dark</label><br>
+                </div>
+                <input type="button" value="Next" onclick="showQuestion6()" class="card-button">
+            </form>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question" id="question6" style="display: none;">
+            <h2>How dark are your eyes?</h2>
+            <form id="question6Form">
+                <div class="options">
+                    <input type="radio" id="lessPigmented" name="eyeDarkness" value="lessPigmented">
+                    <label for="lessPigmented">Less pigmented</label><br>
+                </div>
+                <div class="options">
+                    <input type="radio" id="morePigmented" name="eyeDarkness" value="morePigmented">
+                    <label for="morePigmented">More pigmented</label><br>
+                </div>
+                <input type="button" value="Next" onclick="showQuestion7()" class="card-button">
+            </form>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question" id="question7" style="display: none;">
+            <h2>How dark and thick is your hair?</h2>
+            <form id="question7Form">
+                <div class="options">
+                    <input type="radio" id="lightThinHair" name="hairDarkness" value="lightThin">
+                    <label for="lightThinHair">Light and thin</label><br>
+                </div>
+                <div class="options">
+                    <input type="radio" id="darkCoarseHair" name="hairDarkness" value="darkCoarse">
+                    <label for="darkCoarseHair">Dark and coarse</label><br>
+                </div>
+                <input type="button" value="Next" onclick="showInstruction()" class="card-button">
+            </form>
+        </div>
+
+        <!-- Instructions for Questions 8-10 -->
+        <div class="question" id="instruction" style="display: none;">
+            <h2>Instructions for Question 8</h2>
+            <p>Take a photo in natural lighting and turn it into black and white. Compare the contrast between your facial features for the following questions.</p>
+            <input type="button" value="Next" onclick="showQuestion8()" class="card-button">
+        </div>
+
+       <!-- Question 8 -->
+<div class="question" id="question8" style="display: none;">
+    <h2>Question 8: How much contrast between your hair, eyes, and skin?</h2>
+    <!-- Know How Button -->
+    <button id="knowContrast" class="card-button">Know how</button>
+    <form id="question8Form">
+        <div class="options">
+            <input type="radio" id="lowContrast" name="contrast" value="low">
+            <label for="lowContrast">Low contrast</label><br>
+        </div>
+        <div class="options">
+            <input type="radio" id="mediumContrast" name="contrast" value="medium">
+            <label for="mediumContrast">Medium contrast</label><br>
+        </div>
+        <div class="options">
+            <input type="radio" id="highContrast" name="contrast" value="high">
+            <label for="highContrast">High contrast</label><br>
+        </div>
+        <input type="button" value="Next" onclick="showQuestion9()" class="card-button">
+    </form>
+</div>
+
+<div id="question9" style="display: none;">
+    <h2>Question 9: Do you look significantly better in warm or cool colors?</h2>
+    <form id="question9Form">
+        <div class="options">
+            <input type="radio" id="significantlyBetterWarm" name="significantBetterWarmCool" value="warm">
+            <label for="significantlyBetterWarm">Warm</label><br>
+        </div>
+        <div class="options">
+            <input type="radio" id="significantlyBetterCool" name="significantBetterWarmCool" value="cool">
+            <label for="significantlyBetterCool">Cool</label><br>
+        </div>
+        <div class="options">
+            <input type="radio" id="significantlyBetterBoth" name="significantBetterWarmCool" value="both">
+            <label for="significantlyBetterBoth">Both</label><br>
+        </div>
+        <input type="button" value="Next" onclick="showQuestion10()" class="card-button">
+    </form>
+</div>
+
+<div id="question10" style="display: none;">
+    <h2>Question 10: Do you look significantly better in bright or dark colors?</h2>
+    <form id="question10Form">
+        <div class="options">
+            <input type="radio" id="significantlyBetterBright" name="significantBetterBrightDark" value="bright">
+            <label for="significantlyBetterBright">Bright</label><br>
+        </div>
+        <div class="options">
+            <input type="radio" id="significantlyBetterDark" name="significantBetterBrightDark" value="dark">
+            <label for="significantlyBetterDark">Dark</label><br>
+        </div>
+        <div class="options">
+            <input type="radio" id="significantlyBetterBoth2" name="significantBetterBrightDark" value="both">
+            <label for="significantlyBetterBoth2">Both</label><br>
+        </div>
+        <input type="button" value="Next" onclick="showQuestion11()" class="card-button">
+    </form>
+</div>
+
+
+<div id="question11" style="display: none;">
+    <h2>Question 11: Can you wear muted or bright colors?</h2>
+    <form id="question11Form">
+        <input type="radio" id="wearMuted" name="wearMutedBright" value="muted">
+        <label for="wearMuted">Muted</label><br>
+        <input type="radio" id="wearBright" name="wearMutedBright" value="bright">
+        <label for="wearBright">Bright</label><br>
+        <input type="radio" id="wearBoth" name="wearMutedBright" value="both">
+        <label for="wearBoth">Both</label><br>
+        <button id="submit-button">Submit</button>
+    </form>
+</div>
+
+
+
+
+       
+
+    <!-- Popup Modal for Question 1 -->
+    <div id="undertoneModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="slider">
+                <div class="slide">
+                    <img src="veins.jpg" alt="Veins Image">
+                    <p>Check the color of your wrist blood vessels 1-2cm from your wrist. If it is blueish-purple, you are cool toned. If it is green, you are warm toned and if you see a mix of both, you are likely to be neutral toned.</p>
+                </div>
+                <div class="slide">
+                    <img src="jewellery.jpg" alt="Jewellery Image">
+                    <p>Do you look better in gold or silver jewellery? If gold, you are warm toned and if silver, cool toned. Looking good in both could mean you have a neutral hue.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Modal for Question 2 Reference -->
+    <div id="eyeToneModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="slider">
+                <div class="slide">
+                    <img src="cooleye.jpg" alt="Cool Eye Image">
+                    <p>Cool eye tones: These tones typically complement cool undertones in skin. Shades like blue, gray, and green often look great with cool eye tones.</p>
+                </div>
+                <div class="slide">
+                    <img src="warmeye.jpg" alt="Warm Eye Image">
+                    <p>Warm eye tones: These tones generally work well with warm undertones in skin. Shades like brown, hazel, and amber can enhance warm eye tones.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Modal for Question 3 Reference -->
+    <div id="hairToneModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="slider">
+                <div class="slide">
+                    <img src="coolhair.jpg" alt="Cool Hair Image">
+                    <p>Cool hair tones: These tones usually go with cool undertones in skin. Colors like platinum blonde, ash brown, and black enhance cool tones.</p>
+                </div>
+                <div class="slide">
+                    <img src="warmhair.jpg" alt="Warm Hair Image">
+                    <p>Warm hair tones: These tones usually go with warm undertones in skin. Colors like golden blonde, caramel, and rich browns enhance warm tones.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Modal for Question 4 Reference -->
+    <div id="vibeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="slider">
+                <div class="slide">
+                    <img src="blackcat.jpg" alt="Black Cat Image">
+                    <p>Black cat vibes: Independent, mysterious, and elegant.</p>
+                </div>
+                <div class="slide">
+                    <img src="goldenretriever.jpg" alt="Golden Retriever Image">
+                    <p>Golden retriever vibes: Friendly, loyal, and approachable.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Modal for Question 8 Reference -->
+    <div id="contrastModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="slide">
+                <img src="contrast.jpg" alt="Contrast Image">
+                <p>Compare the contrast between your hair, eyes, and skin. High contrast means a stark difference between them, while low contrast means they blend more harmoniously.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="seasonalquiz.js"></script>
+</body>
+</html>

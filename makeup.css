@@ -1,0 +1,82 @@
+/* Reset and Base Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Makeup Page Specific Styles */
+body.makeup-page {
+    background-color: #FFB6C1; /* Light Pink */
+    color: #333333; /* Dark Gray Text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #FFFFFF; /* White */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 90%;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    color: #CC0066; /* Dark Pink */
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    color: #333333; /* Dark Gray */
+    margin-bottom: 20px;
+}
+
+.question-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.icon {
+    width: 40px;  /* Increased size */
+    height: 40px; /* Increased size */
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    color: #CC0066; /* Dark Pink */
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666666; /* Medium Gray */
+    margin-bottom: 20px;
+}
+
+.card-button {
+    background-color: #F0F0F0; /* Light Gray */
+    color: #CC0066; /* Dark Pink */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Ensure anchor tag behaves like a button */
+    display: inline-block; /* Ensure inline-block display */
+}
+
+.card-button:hover {
+    background-color: #E0E0E0; /* Slightly darker gray */
+}

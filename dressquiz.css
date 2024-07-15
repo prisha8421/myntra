@@ -1,0 +1,124 @@
+/* Reset and General Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5; /* Light grey background */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #d13f6a; /* Dark pink color */
+}
+
+main {
+    padding: 20px;
+}
+
+#quiz-container {
+    background-color: #f9f9f9; /* Light grey background for quiz */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+#quiz-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333333; /* Dark grey color */
+    margin-bottom: 10px;
+    display: block;
+}
+
+.options {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: #555555; /* Medium grey color */
+}
+
+input[type="radio"] {
+    display: none; /* Hide default radio button */
+}
+
+span {
+    padding-left: 30px; /* Spacing for radio button text */
+    position: relative;
+}
+
+span:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #d13f6a; /* Dark pink border */
+    border-radius: 50%; /* Circular shape */
+    transition: background-color 0.3s ease;
+}
+
+input[type="radio"]:checked + span:before {
+    background-color: #d13f6a; /* Dark pink fill when selected */
+}
+
+button#next-btn {
+    background-color: #d13f6a; /* Dark pink button color */
+    color: #ffffff; /* White text color */
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#next-btn:hover {
+    background-color: #aa3355; /* Darken button on hover */
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #cccccc; /* Light grey border top */
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #666666; /* Medium grey text color */
+}
